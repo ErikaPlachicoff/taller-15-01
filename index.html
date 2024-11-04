@@ -2,53 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces Uruguay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS desde Cloudflare -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #698A60;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="index.html">Raíces Uruguay</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <form class="d-flex order-1 order-lg-2 my-2 my-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 order-2 order-lg-1">
+          <li class="nav-item">
+            <a class="nav-link text-light active" aria-current="page" href="#">Dolor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Sit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Amet</a>
+          </li>
+          <li class="nav-item dropdown d-lg-none">
+            <a class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item " href="#">Ombú</a></li>
+              <li><a class="dropdown-item " href="#">Ceibo</a></li>
+              <li><a class="dropdown-item " href="#">Hibisco</a></li>
+              <li><a class="dropdown-item " href="#">Espinillo</a></li>
+              <li><a class="dropdown-item " href="#">Cedrón del Monte</a></li>
+              <li><a class="dropdown-item " href="#">Guayaba</a></li>
+              <li><a class="dropdown-item " href="#">Sauce Criollo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!--La nav se agrega dinámicamente-->
-    <main class="container-fluid my-5">
+  <!--FIN DE LA NAVBAR-->
 
-        <div class="content">
-            <div class="row mt-3">
-                <div class="col-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">Opción 1</li>
-                        <li class="list-group-item">Opción 2</li>
-                        <li class="list-group-item">Opción 3</li>
-                        <li class="list-group-item">Opción 4</li>
-                    </ul>
-                </div>
-            </div>
+  <div class="container-fluid my-5" id="title">
+    <h1 class="text-center">Árboles Nativos Del Uruguay</h1>
+
+
+    <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner" id="carouselQuotes"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section class="col-12">
+      <img src="img/ceibo1.jpg" alt="árbol ceibo">
+      <img src="img/ceibo2.jpg" alt="flor de ceibo">
+      <img src="img/hibiscoFlor.png" alt="Hibisco flor">
+      <img src="img/omb1.jpg" alt="ombu">
+      <img src="img/ombu-hojas.jpg" alt="Ombu hojas">
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="container m-4 ">
+      <div class="row">
+        <!-- Columna de la lista de árboles -->
+        <div class="col-md-3">
+          <ul class="list-group">
+            <li class="list-group-item treeName">Ombú</li>
+            <li class="list-group-item treeName">Ceibo</li>
+            <li class="list-group-item treeName">Hibisco</li>
+            <li class="list-group-item treeName">Espinillo</li>
+            <li class="list-group-item treeName">Cedrón de Monte</li>
+            <li class="list-group-item treeName">Guayaba</li>
+            <li class="list-group-item treeName">Sauce Criollo</li>
+
+          </ul>
         </div>
 
+        <!-- Columna de descripciones -->
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Ombú</h3>
+              <p>El ombú es un árbol nativo de Uruguay conocido por su gran tamaño y tronco robusto. Su presencia es muy
+                común en las zonas de campo.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Ceibo</h3>
+              <p>El ceibo es el árbol nacional de Uruguay y su flor es de un rojo vibrante. Es un símbolo de la
+                naturaleza uruguaya.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Hibisco</h3>
+              <p>El hibisco es una planta con flores de colores variados y brillantes, que se adapta bien a los climas
+                cálidos de la región.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Cedrón de Monte</h3>
+              <p>El cedrón de monte es un arbusto que puede crecer hasta 3 metros de altura, con hojas aromáticas y
+                flores blancas que atraen a los polinizadores.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Guayaba</h3>
+              <p>La guayaba es un árbol frutal que produce frutos comestibles de sabor dulce. Su cultivo es común en
+                regiones tropicales y subtropicales.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Sauce Criollo</h3>
+              <p>El sauce criollo es un árbol que crece cerca de cuerpos de agua, conocido por su tronco flexible y
+                sus hojas alargadas. Proporciona sombra y refugio a diversas especies.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <h3 class="treeName">Espinillo</h3>
+              <p>El espinillo es un árbol que crece en suelos arenosos y es conocido por sus espinas y flores amarillas.
+                Es una especie importante para la fauna local.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
 
     <script src="js/init.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

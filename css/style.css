@@ -1,0 +1,66 @@
+.carousel-item {
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(20, 85, 23);
+    text-align: center;
+}
+
+
+
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(150%);
+}
+
+/* Estilo general para todos los enlaces */
+.treeName {
+    color: rgb(20, 85, 23) ; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: .5s ease;
+    display: inline-block; 
+  }
+  
+  /* Estilo cuando el usuario pasa el mouse sobre el enlace */
+  .treeName:hover {
+    color: rgb(78, 97, 79); 
+    cursor:pointer;
+    transform: scale(1.05);
+
+  }
+
+  .dropdown-menu, .dropdown-item{
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+  }
+ 
+  
+
+ 
+  
+
+
+
+
